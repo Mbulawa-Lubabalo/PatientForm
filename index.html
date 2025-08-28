@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Form</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Patient Information</h1>
+        
+        <!-- The 'action' attribute specifies where to send the form data. 
+             The 'method="post"' is standard for submitting data. -->
+        <form action="/submit-patient-data" method="post">
+            
+            <!-- First Name Input -->
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g., Jane" required>
+            </div>
+            
+            <!-- Surname Input -->
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="e.g., Doe" required>
+            </div>
+            
+            <!-- Gender Selection -->
+            <div class="form-group">
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <div class="gender-option">
+                        <input type="radio" id="genderMale" name="gender" value="male" required>
+                        <label for="genderMale">Male</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="genderFemale" name="gender" value="female">
+                        <label for="genderFemale">Female</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="genderOther" name="gender" value="other">
+                        <label for="genderOther">Other</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="genderPreferNotToSay" name="gender" value="not_specified">
+                        <label for="genderPreferNotToSay">Prefer not to say</label>
+                    </div>
+                </fieldset>
+            </div>
+            
+            <!-- ID Number Input -->
+            <div class="form-group">
+                <label for="idNumber">ID Number:</label>
+                <input type="text" id="idNumber" name="idNumber" placeholder="Enter your national ID or passport number" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Information</button>
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>
