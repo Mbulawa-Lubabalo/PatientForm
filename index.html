@@ -6,13 +6,14 @@
     <title>Patient Information Form</title>
 </head>
 <body>
+    <script src="scripts.js"></script>
 
     <div class="form-container">
         <h1>Patient Information</h1>
         
         <!-- The 'action' attribute specifies where to send the form data. 
              The 'method="post"' is standard for submitting data. -->
-        <form action="/submit-patient-data" method="post">
+        <form id="patientForm">
             
             <!-- First Name Input -->
             <div class="form-group">
@@ -38,14 +39,7 @@
                         <input type="radio" id="genderFemale" name="gender" value="female">
                         <label for="genderFemale">Female</label>
                     </div>
-                    <div class="gender-option">
-                        <input type="radio" id="genderOther" name="gender" value="other">
-                        <label for="genderOther">Other</label>
-                    </div>
-                    <div class="gender-option">
-                        <input type="radio" id="genderPreferNotToSay" name="gender" value="not_specified">
-                        <label for="genderPreferNotToSay">Prefer not to say</label>
-                    </div>
+                    
                 </fieldset>
             </div>
             
@@ -59,6 +53,10 @@
             <button type="submit">Submit Information</button>
             
         </form>
+
+        <!-- Div to show server response -->
+        <div id="statusMessage" class="status-message"></div>
+
     </div>
 
     
