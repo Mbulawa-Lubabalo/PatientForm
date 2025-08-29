@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const formData = new FormData(form);
                 const data = Object.fromEntries(formData.entries());
-                console.log(data)
+                console.log(JSON.stringify(data))
 
                 statusMessage.textContent = 'Sending data...';
-                statusMessage.className = 'status-message'; // Reset class
+                statusMessage.className = 'status-message';
 
 
-                fetch('http://localhost:7000/api/patients', { 
+                fetch('http://10.200.109.149:7000/patients', { 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

@@ -18,13 +18,25 @@
             <!-- First Name Input -->
             <div class="form-group">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
+                <input type="text" id="firstName" name="name" required>
             </div>
             
             <!-- Surname Input -->
             <div class="form-group">
-                <label for="surname">Surname:</label>
-                <input type="text" id="surname" name="surname" required>
+                <label for="surName">Surname:</label>
+                <input type="text" id="surName" name="surName" required>
+            </div>
+
+            <!-- Date of birth -->
+             <div class="form-group">
+                <label for="dob">Date of birth:</label>
+                <input type="text" id="dob" name="dob" placeholder="Enter your date of birth (e.g yyyy-mm-dd)" required>
+            </div>
+
+            <!-- ID Number Input -->
+            <div class="form-group">
+                <label for="id_number">ID Number:</label>
+                <input type="text" id="id_number" name="id_number" placeholder="Enter your national ID or passport number" required>
             </div>
             
             <!-- Gender Selection -->
@@ -42,12 +54,17 @@
                     
                 </fieldset>
             </div>
-            
-            <!-- ID Number Input -->
+
             <div class="form-group">
-                <label for="idNumber">ID Number:</label>
-                <input type="text" id="idNumber" name="idNumber" placeholder="Enter your national ID or passport number" required>
+                <label for="allergies">Allergies</label>
+                <input type="text" id="allergies" name="allergies" placeholder="if none enter n/a" required>
             </div>
+            
+            <div class="form-group">
+                <label for="illness">Illness</label>
+                <input type="text" id="illness" name="illness" required>
+            </div>
+            
 
             <!-- Submit Button -->
             <button type="submit">Submit Information</button>
