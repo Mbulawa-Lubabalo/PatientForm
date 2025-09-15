@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 statusMessage.className = 'status-message';
 
 
-                fetch('http://10.200.109.149:7000/patients', { 
+                fetch('http://192.168.211.71:7000/patients', { 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
